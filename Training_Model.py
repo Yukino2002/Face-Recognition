@@ -4,7 +4,6 @@ import numpy as np
 
 people = []
 
-# declaring an empty list, passing the path value and appending all the names of the folders
 DIR = r'P:\Work\OpenCV Course\Face Recognition Training Images'
 for i in os.listdir(DIR):
     people.append(i)

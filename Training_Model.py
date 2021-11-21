@@ -47,8 +47,6 @@ def create_train():
                 labels.append(label)
 
 create_train()
-print(f'Features = {len(features)}')
-print(f'Labels = {len(labels)}')
 print('Training Done :3')
 
 # then we are converting the features and labels list, into numerical numpy arrays

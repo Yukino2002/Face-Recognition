@@ -17,6 +17,7 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('Face_trained.yml')
 
 # Taking an image from the Validation folder, user can change
+# currently can choose amongst 'emu', 'thor', 'stoned', 'leo', 'alexa'
 image = cv2.imread(r'Validation\stoned.jpg')
 
 # converting the image to grayscale

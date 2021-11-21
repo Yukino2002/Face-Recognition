@@ -17,8 +17,9 @@ image = cv2.imread(r'Validation\phoebe.jpg')
 # converting the image to grayscale
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-# getting the coordiates of the region of interest, that is the face
+# getting the coordinates of the region of interest, that is the face
 face_rectangle = haar_cascade.detectMultiScale(gray, scaleFactor = 1.1, minNeighbors = 11)
+
 
 for (x, y, w, h) in face_rectangle:
     face_roi = gray[y:y + h, x:x + w]

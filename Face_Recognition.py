@@ -1,8 +1,13 @@
+import os
 import cv2
 import numpy as np
 
 # Declaring the list
-people = ['Alexandra Daddario', 'Chris Hemsworth', 'Emma Stone', 'Emma Watson', 'Leonardo DiCaprio']
+people = []
+
+DIR = r'Face Recognition Training Images'
+for i in os.listdir(DIR):
+    people.append(i)
 
 # defining the variable for face detection, and loading the data set from the opencv source
 haar_cascade = cv2.CascadeClassifier('haarcascade_face.xml')

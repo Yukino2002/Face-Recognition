@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Declaring the list
-people = ['Chandler', 'Joey', 'Monica', 'Phoebe', 'Rachael', 'Ross']
+people = ['Alexandra Daddario', 'Chris Hemsworth', 'Emma Stone', 'Emma Watson', 'Leonardo DiCaprio']
 
 # defining the variable for face detection, and loading the data set from the opencv source
 haar_cascade = cv2.CascadeClassifier('haarcascade_face.xml')
@@ -12,7 +12,7 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('Face_trained.yml')
 
 # Taking an image from the Validation folder
-image = cv2.imread(r'Validation\phoebe.jpg')
+image = cv2.imread(r'Validation\stoned.jpg')
 
 # converting the image to grayscale
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

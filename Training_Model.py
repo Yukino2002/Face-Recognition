@@ -4,7 +4,7 @@ import numpy as np
 
 people = []
 
-DIR = r'P:\Work\OpenCV Course\Face Recognition Training Images'
+DIR = r'Face Recognition Training Images'
 for i in os.listdir(DIR):
     people.append(i)
 
